@@ -1,0 +1,295 @@
+* {
+    font-family: Verdana, Helvetica, Arial, sans-serif;
+    box-sizing: border-box;
+}
+p {
+    font-size: 12px;
+}
+header a, header a:visited, footer a, footer a:visited {
+    color: inherit;
+    text-decoration: none;
+}
+header a:hover, footer a:hover {
+    text-shadow: 0 0 4px white;
+}
+html {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(17, 32, 34);
+}
+body {
+    display: flex;
+    flex-direction: column;
+
+    margin: 0;
+    min-height: 100vh;
+    background-color: rgb(240, 254, 255);
+
+    box-shadow: 0 0 16px rgb(7, 49, 47);
+}
+header {
+    margin: 0;
+    padding: 8px;
+    background-color: rgb(57, 84, 87);
+    color: rgb(240, 254, 255);
+}
+main {
+    display: flex;
+    flex-direction: column;
+
+    min-height: 100vh;
+    width: 100%;
+
+    background-color: inherit;
+}
+footer {
+    margin: 0;
+    padding: 8px;
+
+    background-color: rgb(57, 84, 87);
+    color: rgb(240, 254, 255);
+}
+img {
+    display: block;
+    width: 100%;
+    height: auto;
+    z-index: 100;
+}
+
+.character-bar-container {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+.character-bar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    width: 100%;
+    
+    background-color: rgb(192, 221, 223);
+}
+.character-portrait {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40%;
+    height: 0px;
+
+    flex-shrink: 0;
+}
+.character-bar.paragraph {
+    width: 60%;
+}
+
+.tab {
+    position: relative;
+    overflow: hidden;
+
+    width: 40%;
+    height: 24px;
+
+    background-color: rgb(192, 221, 223);
+}
+.tab:after {
+    content: "";
+    position: absolute;
+    right: 0%;
+    margin: -17px;
+    width: 34px;
+    height: 34px;
+    transform: rotate(45deg);
+    background-color: rgb(240, 254, 255);
+}
+.tab.left {
+    align-self: flex-start;
+}
+.tab.left:after {
+    right: 0%;
+}
+.tab.right {
+    align-self: flex-end;
+}
+.tab.right:after {
+    right: 100%;
+}
+
+.inset-gradient {
+    position: relative;
+    background-image: linear-gradient(rgba(4, 28, 31, 0.75), rgba(0, 0, 0, 0) 15%, rgba(0, 0, 0, 0) 85%, rgba(4, 28, 31, 0.75));
+    z-index: 200;
+    height: 100%;
+}
+#parallax-container {
+    position: relative;
+    height: 75vh;
+    background-image: url("../media/images/Jason-Monica-Fades-Adjusted.png");
+    z-index: 100;
+}
+
+.paragraph {
+    z-index: 200;
+    background-color: inherit;
+}
+.paragraph.centered {
+    text-align: center;
+}
+
+.right-collapse {
+    padding-right: 16px !important;
+}
+.left-collapse {
+    padding-left: 16px !important;
+}
+
+.action-display-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+    width: 100%;
+    margin-bottom: 20px;
+}
+.action-display {
+    width: 300px;
+    min-height: 100px;
+    margin: 24px;
+}
+.action-content {
+    border: 2px solid rgb(192, 221, 223);
+    min-height: 150px;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+.action-header {
+    width: 100%;
+    background-color: rgb(192, 221, 223);
+    border-top-right-radius: 3px;
+}
+.action-header h3 {
+    margin: 0;
+    padding: 6px;
+    padding-top: 0px;
+}
+.tab.action {
+    height: 8px;
+    width: 75%;
+    border-top-left-radius: 3px;
+}
+
+@media only screen and (min-width: 1201px){
+    body {
+        width: 1080px;
+    } 
+    .paragraph {
+        padding: 16px 128px;
+    }
+    .character-portrait {
+        padding: 16px 128px;
+    }
+    .image-reel-content {
+        height: 500px;
+    }
+    #parallax-container {   
+        background-size: cover;
+    }
+    .right-collapse {
+        padding-right: 24px !important;
+    }
+    .left-collapse {
+        padding-left: 24px !important;
+    }
+    .character-portrait {
+        padding: 60px !important;
+        position: relative;
+        top: 36px;
+    }
+}
+@media only screen and (min-width: 1025px) and (max-width: 1200px){
+    body {
+        width: 900px;
+    } 
+    .paragraph {
+        padding: 16px 64px;
+    }
+    .character-portrait {
+        padding: 16px 64px;
+    }
+    .image-reel-content {
+        height: 500px;
+    }
+    .right-collapse {
+        padding-right: 24px !important;
+    }
+    .left-collapse {
+        padding-left: 24px !important;
+    }
+    .character-portrait {
+        padding: 36px !important;
+        position: relative;
+        top: 24px;
+    }
+}
+@media only screen and (min-width: 769px) and (max-width: 1024px){
+    body {
+        width: 700px;
+    } 
+    .paragraph {
+        padding: 16px 64px;
+    }
+    .character-portrait {
+        padding: 16px 64px;
+    }
+    .image-reel-content {
+        height: 400px;
+    }
+    .character-portrait {
+        padding: 12px !important;
+    }
+}
+@media only screen and (min-width: 481px) and (max-width: 768px){
+    body {
+        width: 481px;
+    } 
+    .paragraph {
+        padding: 16px 16px;
+    }
+    .character-portrait {
+        padding: 16px 16px;
+    }
+    .image-reel-content {
+        height: 300px;
+    }
+    #parallax-container {   
+        height: 60vh;
+        background-size: 120vh;
+    }
+    .character-portrait {
+        padding: 0px !important;
+    }
+}
+@media only screen and (max-width: 480px){
+    body {
+        width: 100%;
+    } 
+    .paragraph {
+        padding: 16px 16px;
+    }
+    .character-portrait {
+        padding: 16px 16px;
+    }
+    .image-reel-content {
+        height: 250px;
+    }
+    #parallax-container {   
+        height: 60vh;
+        background-size: 120vh;
+    }
+    .character-portrait {
+        padding: 0px !important;
+    }
+}
