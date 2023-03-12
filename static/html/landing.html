@@ -6,9 +6,11 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="../css/index.css">
 
         <script src="../js/image-reel.js"></script>
+        <script src="../js/nav-menu.js"></script>
     </head>
     <body>
         <header id="page-header">
@@ -19,6 +21,19 @@
             <a class="header-link"  href="gameplay.html">Gameplay</a>
             <a class="header-link"  href="story.html">Narrative</a>
             <a class="header-link"  href="gallery.html">Gallery</a>
+            <div class="nav-menu">
+                <div id="nav-menu-button">
+                    <a href="javascript:void(0);" class="icon" onclick="ToggleNav()">
+                        <i class="fa fa-bars"></i>
+                    </a>
+                </div>
+                <div id="menu-link-container" style="display: none">
+                    <a class="menu-link" href="characters.html">Characters</a>
+                    <a class="menu-link"  href="gameplay.html">Gameplay</a>
+                    <a class="menu-link"  href="story.html">Narrative</a>
+                    <a class="menu-link"  href="gallery.html">Gallery</a>
+                </div>
+            </div>
         </header>
         <main>
             <div class = "paragraph">  
@@ -77,9 +92,14 @@
             </div>
         </main>
         <footer>
-            <a>Email</a>
-            <a>Instagram</a>
-            <a>LinkedIn</a>
+            <div id="contact-info">
+                <h2>Contact Me</h2>
+                <a href="mailto:ianbeard0159@gmail.com">Email</a>
+                <a href="https://www.instagram.com/ianbeard0159/">Instagram</a>
+                <a href="https://www.linkedin.com/in/ianbeard0159/">LinkedIn</a>
+
+            </div>
+            <div id="bottom-bar"></div>
         </footer>
     </body>
 </html>
