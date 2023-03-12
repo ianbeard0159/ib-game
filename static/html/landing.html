@@ -3,23 +3,77 @@
     <head>
         <title>Immortal Blade</title>
 
-        <meta charset="UFT-8">
+        <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
         <link rel="stylesheet" href="../css/index.css">
 
+        <script src="../js/image-reel.js"></script>
     </head>
     <body>
-        <header>
-            <a href="landing.html">Home</a>
+        <header id="page-header">
+            <div id="home-link">
+                <a href="landing.html">Immortal Blade</a>
+            </div>
             <a href="characters.html">Characters</a>
             <a href="gameplay.html">Gameplay</a>
-            <a href="story.html">Story</a>
+            <a href="story.html">Narrative</a>
             <a href="gallery.html">Gallery</a>
         </header>
         <main>
             <div class = "paragraph">  
-                <p>Landing Page</p>
+                <h1>Landing Page</h1>
+                <p>Landing Page Paragraph</p>
+                <p>Another Landing Page Paragraph</p>
+            </div>
+            <div id="image-reel" class = "image-reel">
+                <div class="image-reel-content">
+
+                    <div id="image-reel-counter">&#9673; &#9679; &#9679;</div>
+                    <div class="arrow left" onclick="OnClick_LeftArrow()">&#9665;</div>
+                    <div class="arrow right" onclick="OnClick_RightArrow()">&#9655;</div>
+
+                    <div class="image-reel-item transparent">
+                        <div class="image-reel-cover"></div>
+                        <img src="../media/images/Jason-Monica-Fades-Adjusted.png" />
+                        <div class="image-text">
+                            <a href="gameplay.html">
+                                <h2>Gameplay</h2>
+                                <p>Learn about how combat and exploration will be implemented in the game on the gameplay page.</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="image-reel-item transparent">
+                        <div class="image-reel-cover"></div>
+                        <img src="../media/images/Monica Ref Sheet Crop.png" />
+                        <div class="image-text">
+                            <a href="characters.html">
+                                <h2>Characters</h2>
+                                <p>Read about the game's protagonists on the characters page.</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="image-reel-item transparent">
+                        <div class="image-reel-cover"></div>
+                        <img src="../media/images/Lilith-Group-Web.png" />
+                        <div class="image-text">
+                            <a href="story.html">
+                                <h2>Narrative</h2>
+                                <p>Learn about the game's story on the narrative page.</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="image-reel-item transparent">
+                        <div class="image-reel-cover"></div>
+                        <img src="../media/images/Ariss Attack WIP.gif" />
+                        <div class="image-text">
+                            <a href="gallery.html">
+                                <h2>Gallery</h2>
+                                <p>View concept art, animations, and more on the gallery page.</p>
+                            </a>
+                        </div>
+                    </div>
+                 </div>
             </div>
         </main>
         <footer>
