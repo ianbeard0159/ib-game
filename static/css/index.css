@@ -85,6 +85,7 @@ main {
 
     min-height: 100vh;
     width: 100%;
+    overflow-x: hidden;
 
     background-color: inherit;
 }
@@ -412,7 +413,10 @@ img {
         padding: 16px 16px;
     }
     #parallax-container {   
-        height: 60vh;
+        height: 100vh;
+        max-height: 500px;
+        width: max(130vh, 130vw);
+        align-self: center;
         background-size: cover;
     }
     .character-portrait {
@@ -448,6 +452,9 @@ img {
     .image-text {
         width: 80%;
     }
+    .header-link {
+        display: none;
+    }
 }
 @media only screen and (max-width: 480px){
     body {
@@ -457,7 +464,10 @@ img {
         padding: 16px 16px;
     }
     #parallax-container {   
-        height: 60vh;
+        height: 100vh;
+        max-height: 400px;
+        width: max(130vh, 130vw);
+        align-self: center;
         background-size: cover;
     }
     .character-portrait {
@@ -492,5 +502,8 @@ img {
     }
     .image-text {
         width: 80%;
+    }
+    .header-link {
+        display: none;
     }
 }
