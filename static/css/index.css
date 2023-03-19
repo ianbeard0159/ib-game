@@ -132,8 +132,8 @@ header a:hover, footer a:hover {
 main {
     display: flex;
     flex-direction: column;
+    flex-grow: 1;
 
-    min-height: 100vh;
     width: 100%;
     overflow-x: hidden;
 
@@ -141,6 +141,7 @@ main {
 }
 footer {
     margin: 0;
+    width: 100%;
 
     background-color: var(--background-dark);
     color: rgb(240, 254, 255);
@@ -167,6 +168,14 @@ img {
     width: 100%;
     height: auto;
     z-index: 100;
+}
+.expandable {
+    width: 75%;
+    height: auto;
+    margin: 0 auto;
+}
+.expandable:hover {
+    box-shadow: 0 0 4px black;
 }
 video {
     width: 100%;
@@ -410,6 +419,25 @@ video {
 .image-text a:hover {
     text-shadow: 0 0 4px rgba(255, 255, 255, 0.5);
     cursor: pointer;
+}
+
+#modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+
+    height: 100vh;
+    width: 100%;
+
+    background-image: none;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: rgba(0, 0, 0, 0.25);
 }
 
 

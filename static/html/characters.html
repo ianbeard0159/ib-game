@@ -11,8 +11,10 @@
 
         <script src="../js/parallax.js"></script>
         <script src="../js/nav-menu.js"></script>
+        <script src="../js/modal.js"></script>
     </head>
     <body>
+        <div id="modal" onclick="onclick_modal()" style="display: none"></div>
         <header id="page-header">
             <div id="home-link">
                 <a href="landing.html">Immortal Blade</a>
@@ -37,8 +39,7 @@
         </header>
         <main id="main-container">
             <div class = "paragraph">  
-                <h1>Characters Page</h1>
-                <p>TODO: I feel like I should put something here...</p>
+                <h1 class="centered">Characters</h1>
             </div>
             <div class="character-bar-container">
                 <div class = "tab left"></div>
@@ -57,10 +58,12 @@
                             top it all off, her sword <i>(while being a fearsome weapon in its own right)</i> also significantly amplifies her magical power.
                         </p>
                     </div>
-                </div></div>
-            <div class = "paragraph">  
-                <P>TODO: Come up with content about Monica's abilities?</P>
+                </div>
             </div>
+            <div class="paragraph">
+                <img class="expandable" src="../media/images/Monica Ref Sheet.png" onclick="onclick_expandableImage(this)">
+            </div>
+            <!--
             <div class="action-display-row">
                 <div class="action-display">
                     <div class="tab action">
@@ -87,7 +90,7 @@
                     <div class="action-content"></div>
                 </div>
             </div>
-
+            -->
             <div class="character-bar-container">
                 <div class = "tab right"></div>
                 <div class = "character-bar">  
@@ -100,7 +103,8 @@
                         <p>
                             In combat, what Jason lacks in physical strength he more than makes up for with speed. His reflexes <i>(enhanced by his electric magic)</i> 
                             are second to none, and he's often the first to notice a pattern in enemy behavior thanks to his keen intellect. He can also use his magic 
-                            to further boost his agility and generate shields to bolster his defenses, making him an ideal interceptor.
+                            to further boost his agility and generate shields protect his allies, allowing him to easily intercept enemies and buy his friends time 
+                            to do what they do best.
                         </p>
                     </div>
                     <div class="character-portrait" id="jason-splash">
@@ -114,9 +118,11 @@
                 </div>
 
             </div>
-            <div class = "paragraph">  
+            <div class = "paragraph"> 
+                <!-- 
                 <p>TODO: Blurb about how there are other characters who are a part of their story</p>
                 <p>Character portraits?</p>
+            -->
             </div>
         </main>
         <footer>
