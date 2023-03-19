@@ -1,0 +1,31 @@
+#gallery-display {
+    display: flex;
+
+    width: 100%;
+    min-height: 50vh;
+
+    color: white;
+    background-color: black;
+}
+#gallery-display .arrow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 0;
+
+    width: 10%;
+}
+#gallery-display .arrow:hover {
+    text-shadow: 0 0 4px rgb(255, 255, 255);
+    cursor: pointer;    
+}
+#gallery-window {
+    flex-grow: 1;
+
+    margin: 16px 0;
+
+    background-image: url("../media/images/Jason-Monica-Fades-Adjusted.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}

@@ -8,11 +8,17 @@
     font-family: Arial, sans-serif;
     box-sizing: border-box;
 }
-p {
+p, li {
     font-size: 14px;
+}
+h4, li {
+    margin: 4px;
 }
 h1, h2, h3 {
     font-variant-caps: small-caps;
+}
+.paragraph h1, .paragraph h2, .paragraph h3, .paragraph h4 {
+    color: rgb(5, 77, 90);
 }
 html {
     display: flex;
@@ -162,6 +168,10 @@ img {
     height: auto;
     z-index: 100;
 }
+video {
+    width: 100%;
+    height: auto;
+}
 
 .character-bar-container {
     display: flex;
@@ -239,7 +249,7 @@ img {
     z-index: 200;
     background-color: inherit;
 }
-.paragraph.centered {
+.centered {
     text-align: center;
 }
 
@@ -402,10 +412,14 @@ img {
     cursor: pointer;
 }
 
+
 @media only screen and (min-width: 1201px){
     body {
         width: 1080px;
     } 
+    .paragraph {
+        padding: 16px 64px;
+    }
     .character-portrait {
         padding: 16px 128px;
     }
@@ -461,6 +475,9 @@ img {
     body {
         width: 700px;
     } 
+    .paragraph {
+        padding: 16px 64px;
+    }
     .character-portrait {
         padding: 16px 64px;
     }

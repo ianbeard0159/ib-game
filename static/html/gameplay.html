@@ -36,7 +36,96 @@
         </header>
         <main>
             <div class = "paragraph">  
-                <p>Gameplay Page</p>
+                <h1 class="centered">Gameplay</h1>
+                <h2>Overworld Exploration</h2>
+                <p>
+                    The general idea is to have the player characters, represented by 
+                    2D sprites, moving around a 3D environment. This has been done 
+                    before in RPGs, and good examples of the concept include 
+                    'Paper Mario', 'Xenogears', and 'Steven Universe: Save the Light'. 
+                    One of the key parts of this idea is the fact that the camera 
+                    angle is generally not under player control, which greatly reduces 
+                    the potential scope of having a player move around a 3D space.
+                </p>
+                <p>
+                    Characters may have one or more 'Field Skills' that allow them to 
+                    interact with their environment. This could be anything from a 
+                    character destroying an obstacle to jumping over large gaps. The 
+                    number of such abilities will generally be limited to one per 
+                    character to reduce scope, but this is not a hard limit. There 
+                    may also be puzzles to solve and platforming challenges to overcome 
+                    throughout the overworld.
+                </p>
+                <video controls loop>
+                    <source src="../media/videos/movie_004_Trim.mp4">
+                </video>
+                <p class="centered"><i>Video from early prototype build</i></p>
+                <p>
+                    Enemies will be present in the overworld, and usually chase after 
+                    characters if the enemies notice them. Coming into contact with 
+                    an enemy will trigger a battle. Additionally, touching an enemy 
+                    that hasn't noticed them, or using field skills on an enemy, may 
+                    allow players to enter battle with an advantage. If other enemies 
+                    are nearby when the player initiates battle, there is a chance 
+                    for them to join the battle against the player as well. They will 
+                    not join the battle straight away though, instead taking a number 
+                    of turns to arrive based on how far away they are. In the event 
+                    that an excessively large number of enemies are present in a 
+                    battle, some enemies will be placed in reserve. These reserve 
+                    enemies will only join the battle after another enemy unit has 
+                    been defeated.
+                </p>
+                <h2>Turn Based Combat</h2>
+                <p>The combat in Immortal Blade rooted in traditional turn based RPGs, 'Paper Mario' and 
+                    the 'Steven Universe' RPGs in particular, but also takes inspiration from real 
+                    time action RPGs such as 'Xenoblade Chronicles.'
+                </p>
+                <p>Below are some of the key mechanics of Immortal Blade that form the foundation of the combat system.</p>
+                <h3>Stats and Resources</h3>
+                <p>
+                    All combat units, player controlled or otherwise, share the same 
+                    set of stats and resources to work with in battle:
+                </p>
+                <h4>Stats</h4>
+                <ul>
+                    <li><b>Strength</b> - determines physical attack damage</li>
+                    <li><b>Willpower</b> - determines strength of magical attacks and increases resistance to mental status ailments</li>
+                    <li><b>Dexterity</b> - determines accuracy of physical attacks</li>
+                    <li><b>Focus</b> - determines accuracy of magical attacks</li>
+                    <li><b>Endurance</b> - reduces damage of incoming attacks and increases resistance to physical status ailments</li>
+                    <li><b>Agility</b> - reduces accuracy of incoming attacks</li>
+                </ul>
+                <h4>Resources</h4>
+                <ul>
+                    <li><b>Health</b> - Reduced by taking damage from attacks, gained by healing. Characters are incapacitated when their health reaches 0.</li>
+                    <li><b>Action Points</b> - Characters gain a number of action points each turn, up to a certain limit. These points are spent to perform actions, like attacking or casting spells. Characters may take as many actions as they like per turn so long as they have enough points to spend. Unless they or some of their attacks have an ability that says otherwise, characters are limited to one attack action per turn</li>
+                    <li><b>Essence</b> - Essence is spent by a character when they cast spells, and gained by a small amount each turn. Characters can still cast spells even if they don't have enough essence to spend. But if they do, they take damage relative to the amount of essence they would have needed to spend</li>
+                    <li><b>Spirit</b> - Represents a character's morale, measured as a percentage value. It is not something a character can spend, but it can be gained and lost in various ways. Spirit is gained by scoring critical hits or from support spells, and is lost by missing, taking damage, or from certain enemy skills. High spirit increases accuracy and grants access to powerful actions, low spirit lowers accuracy and prevents some actions from being performed. Spirit also affects how resistant a character is to mental status ailments</li>
+                </ul>
+                <h3>Enemy Behavior</h3>
+                <p>
+                    What an enemy does during it's turn, and who they choose as their target, is largly 
+                    determined by an 'aggro' system that tracks how much damage any given character has dealt to 
+                    them during the battle.
+                </p>
+                <p>
+                    Aggro systems are common in MMORPGs, but aren't seen quite as often in 
+                    turn based games. RPGs most likely have some sort of system like this 
+                    in place under the hood, but one of my goals for this project is to
+                    bring enemy aggro to the forefront. allowing players to make tactical 
+                    descisions based on who the enemy is targeting.
+                </p>
+                <p>
+                    Playing RPGs in my own time, I never felt like there was much sense in building a 
+                    character for defense if you can't be sure that the enemy will ever attack them. 
+                    So my hope is that by 
+                    making enemy aggro a transparent system, players will not only 
+                    be able to make tactical descisions based on who the enemy is targeting, but also 
+                    allow players specialize their characters towards offense or defense as a part of 
+                    their startegy before the battle starts. 
+                </p>
+                <h3>Status Ailments</h3>
+                <h3>Special Rules</h3>
             </div>
         </main>
         <footer>
