@@ -446,6 +446,7 @@ video {
     gap: 16px;
     justify-content: center;
     align-items: center;
+    margin-bottom: 16px;
 }
 .gallery-image {
     width: 80%;
@@ -454,6 +455,11 @@ video {
 }
 .gallery-image:hover {
     box-shadow: 0 0 4px black;
+}
+.narrative-image {
+    width: 80%;
+    height: auto;
+    margin: 16px auto;
 }
 
 @media only screen and (min-width: 1201px){
