@@ -440,6 +440,21 @@ video {
     background-color: rgba(0, 0, 0, 0.25);
 }
 
+#gallery-display {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    justify-content: center;
+    align-items: center;
+}
+.gallery-image {
+    width: 80%;
+    max-width: 320px;
+    height: auto;
+}
+.gallery-image:hover {
+    box-shadow: 0 0 4px black;
+}
 
 @media only screen and (min-width: 1201px){
     body {
